@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import logo from "./logo.ico"
 import "./Navbar.css"
+import {RiVideoAddLine} from "react-icons/bi"
 const Navbar=()=> {
       const [authbtn,setauthbtn]= useState(false)
       const currentuser = null;
@@ -12,7 +13,10 @@ const Navbar=()=> {
           <p></p>
           <p></p>
         </div>
-        <link></link>
+        <link to={"/"} className='logo_Div_Navbar'>
+        <img src={logo} alt="" />
+        <p className="logo_title_navbar">Your-Tube</p>
+        </link>
       </div>
       
     </div>
