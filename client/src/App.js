@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import react,{useState} from react;
 function App() {
-  const [toggleDrawersidebar,settoggledrawersidebar] = useState({
+  const [toggledrawersidebar,settoggledrawersidebar] = useState({
     display : "none"
   });
   const toggledrawer = ()=>{
@@ -16,8 +16,12 @@ function App() {
       })
     }
   }
+  const [editcreatechanelbtn,setEditCreateChanelbtn] = useState(false);
+  const [videouploadpage,setvideouploadchannelbtn] = useState(false);
   return (
-    <></>
+    <>
+    <Navbar setEditCreateChanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
+    </>
   );
 }
 
