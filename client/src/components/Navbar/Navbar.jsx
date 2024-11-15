@@ -7,7 +7,13 @@ import { BiUserCircle } from "react-icons/bi"
 import Searchbar from './Searchbar/Searchbar';
 const Navbar=()=> {
       const [authbtn,setauthbtn]= useState(false)
-      const currentuser = null;
+      // const currentuser = null;
+      const currentuser = {
+        result : {
+          email: "Sahil@gmail.com",
+          joinedon: "14-02-2022",
+        }
+      }
   return (
     <div className="Container_Navbar">
       <div className="Burger_logo_Navbar">
