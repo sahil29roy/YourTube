@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import react,{useState} from react;
-import {BrowserRouter as Router } from 'rect-router-dom';
+import react,{ useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import {BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
   const [toggledrawersidebar,settoggledrawersidebar] = useState({
     display : "none"
   });
   const toggledrawer = ()=>{
-    if(toggleDrawersidebar.display === "none"){
+    if(toggledrawersidebar.display === "none"){
       settoggledrawersidebar({
         display : "flex",
       });
@@ -21,7 +23,7 @@ function App() {
   const [videouploadpage,setvideouploadchannelbtn] = useState(false);
   return (
     <Router>
-    <Navbar setEditCreateChanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
+    <Navbar seteditcreatechanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
     </Router>
   );
 }
