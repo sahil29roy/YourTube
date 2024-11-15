@@ -4,6 +4,7 @@ import "./Navbar.css"
 import { RiVideoAddLine } from "react-icons/ri"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { BiUserCircle } from "react-icons/bi"
+import Searchbar from './Searchbar/Searchbar';
 const Navbar=()=> {
       const [authbtn,setauthbtn]= useState(false)
       const currentuser = null;
@@ -20,6 +21,7 @@ const Navbar=()=> {
         <p className="logo_title_navbar">Your-Tube</p>
         </link>
       </div>
+      <Searchbar/>
       <RiVideoAddLine className={"vid_bell_Navbar"}/>
       <div className="appBox">
         <p className="appBox"></p>
