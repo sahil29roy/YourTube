@@ -21,7 +21,6 @@ const Searchbar = () => {
                 {Searchquery && seachlist && <Searchlist setsearchquery={setsearchquery} Titlearray={Titlearray}/>}
             </div>
         </div>
-      
     </div>
     </>
   )
