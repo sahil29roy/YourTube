@@ -15,8 +15,8 @@ const Searchbar = () => {
             <div className="search_div">
                 <input type="text" className='iBox_SearchBar' placeholder="Search" onChange={e=>setsearchquery(e.target.value)} value={Searchquery} onClick={e=>setsearchlist(true)}/>
                 <Link to={`/search/${Searchquery}`}>
-                <FaSearch className='searchIcon_SearchBar'/>
-                </Link>
+                <FaSearch className="searchIcon_SearchBar" />
+              </Link>
                 <BsMicFill callName='Mic_SearchBar'/>
                 {Searchquery && Searchlist && <Searchlist setsearchquery={setsearchquery} Titlearray={Titlearray}/>}
             </div>

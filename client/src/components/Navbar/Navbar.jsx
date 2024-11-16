@@ -5,6 +5,7 @@ import { RiVideoAddLine } from "react-icons/ri"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { BiUserCircle } from "react-icons/bi"
 import Searchbar from './Searchbar/Searchbar';
+import { Link } from "react-router-dom"; 
 const Navbar=({ toggledrawer, seteditcreatechanelbtn })=> {
       const [authbtn,setauthbtn]= useState(false)
       // const currentuser = null;
@@ -22,10 +23,10 @@ const Navbar=({ toggledrawer, seteditcreatechanelbtn })=> {
           <p></p>
           <p></p>
         </div>
-        <link to={"/"} className='logo_Div_Navbar'>
+        <Link to={"/"} className='logo_Div_Navbar'>
         <img src={logo} alt="" />
         <p className="logo_title_navbar">Your-Tube</p>
-        </link>
+        </Link>
       </div>
       <Searchbar/>
       <RiVideoAddLine className={"vid_bell_Navbar"}/>
