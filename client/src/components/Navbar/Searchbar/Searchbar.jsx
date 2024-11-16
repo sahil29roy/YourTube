@@ -3,6 +3,7 @@ import Searchlist from './Searchlist';
 import { BsMicFill } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import './Searchbar.css';
 
 const Searchbar = () => {
     const [Searchquery,setsearchquery] = useState("");
