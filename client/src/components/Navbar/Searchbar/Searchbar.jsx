@@ -5,9 +5,9 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Searchbar = () => {
-    const [searchquery,setsearchquery] = useState("");
+    const [Searchquery,setsearchquery] = useState("");
     const [Searchlist,setsearchlist] = useState(false);
-    const Titlearray=  ["video1","video2","animated video","Movies"].filter(q=>q.toUpperCase().includes(searchquery?.toUpperCase()))
+    const Titlearray=  ["video1","video2","animated video","Movies"].filter(q=>q.toUpperCase().includes(Searchquery?.toUpperCase()))
   return (
     <>
     <div className='searchBar_Container'>
@@ -18,7 +18,7 @@ const Searchbar = () => {
                 <FaSearch className='searchIcon_SearchBar'/>
                 </Link>
                 <BsMicFill callName='Mic_SearchBar'/>
-                {Searchquery && seachlist && <Searchlist setsearchquery={setsearchquery} Titlearray={Titlearray}/>}
+                {Searchquery && Searchlist && <Searchlist setsearchquery={setsearchquery} Titlearray={Titlearray}/>}
             </div>
         </div>
     </div>
@@ -26,4 +26,4 @@ const Searchbar = () => {
   )
 }
 
-export default Searchbar
+export default Searchbar;
