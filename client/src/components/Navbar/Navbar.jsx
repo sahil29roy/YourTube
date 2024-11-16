@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import logo from "./logo.ico"
+import logo from './logo.ico';
 import "./Navbar.css"
 import { RiVideoAddLine } from "react-icons/ri"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { BiUserCircle } from "react-icons/bi"
 import Searchbar from './Searchbar/Searchbar';
-const Navbar=()=> {
+const Navbar=({ toggledrawer, seteditcreatechanelbtn })=> {
       const [authbtn,setauthbtn]= useState(false)
       // const currentuser = null;
       const currentuser = {

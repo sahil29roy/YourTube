@@ -19,7 +19,7 @@ function App() {
       })
     }
   }
-  const [editcreatechanelbtn,setEditCreateChanelbtn] = useState(false);
+  const [editcreatechanelbtn,seteditcreatechanelbtn] = useState(false);
   const [videouploadpage,setvideouploadchannelbtn] = useState(false);
   return (
     <Router>
