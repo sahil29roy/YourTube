@@ -41,21 +41,21 @@ const Navbar=({ toggledrawer, seteditcreatechanelbtn })=> {
         <p className="appBox"></p>
         <p className="appBox"></p>
       </div>
-      <IoMdNotificationsOutline size={22} className={"vid_bell_Navbar"}/>
-      <div className="Auth_cont_Navbar">
-        {currentuser ? (
-          <>
-          
-          <div className="Channel_logo_App" onClick={()=>setauthbtn(true)}>
-            <p className="fstChar_logo_App">
-              {currentuser?.result.name ?(
-                <>{currentuser?.result.name.charAt(0).toUpperCase()}</>
-              ):(
-                <>{currentuser?.result.email.charAt(0).toUpperCase()}</>
-              ) }
-            </p>
-          </div>
-          </>
+      <IoMdNotificationsOutline size={22} className={"vid_bell_Navbar"} />
+                <div className="Auth_cont_Navbar">
+                    {currentuser ? (
+           <>
+           <div className="Chanel_logo_App" onClick={() => setauthbtn(true)}>
+               <p className="fstChar_logo_App">
+                   {currentuser?.result.name ? (
+                       <>{currentuser?.result.name.charAt(0).toUpperCase()}</>
+
+                   ) : (
+                       <>{currentuser?.result.email.charAt(0).toUpperCase()}</>
+                   )}
+               </p>
+           </div>
+       </>
         ):(
           <>
           <BiUserCircle size={22}/>
