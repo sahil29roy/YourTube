@@ -17,7 +17,7 @@ const Navbar = ({ toggledrawer, seteditcreatechanelbtn }) => {
   }
   return (
     <div className="Container_Navbar">
-      <div className="Burger_logo_Navbar">
+      <div className="Burger_Logo_Navbar">
         <div className="burger" onClick={() => toggledrawer()}>
           <p></p>
           <p></p>
