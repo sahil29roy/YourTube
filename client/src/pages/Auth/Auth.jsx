@@ -21,20 +21,20 @@ const Auth = ({ user, setauthbtn, seteditcreatechanelbtn }) => {
                     <div className="email_auth">{user?.result.email}</div>
                 </p>
                 <div className="btns_Auth">
-                    {user?.result.name ?(
+                    {user?.result.name ? (
                         <>
-                        {
-                            <Link to={`/channel/${user?.result?._id}`} className='btn_Auth'>Your Channel</Link>
-                        }
+                            {
+                                <Link to={`/channel/${user?.result?._id}`} className='btn_Auth'>Your Channel</Link>
+                            }
                         </>
-                    ):(
+                    ) : (
                         <>
-                            <input type="subnit" className='btn_Auth' value="Create Your Own Channel" onClick={()=>seteditcreatechanelbtn(true)}/>
+                            <input type="subnit" className='btn_Auth' value="Create Your Own Channel" onClick={() => seteditcreatechanelbtn(true)} />
                         </>
                     )}
                     <div>
                         <div className="btn_Auth" >
-                            <BiLogOut/>
+                            <BiLogOut />
                             Log Out
                         </div>
                     </div>
