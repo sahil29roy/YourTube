@@ -3,6 +3,7 @@ import './App.css';
 import react,{ useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router } from 'react-router-dom';
+import AllRoutes from './AllRoutes';
 
 function App() {
   const [toggledrawersidebar,settoggledrawersidebar] = useState({
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
     <Navbar seteditcreatechanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
+    
     </Router>
   );
 }
