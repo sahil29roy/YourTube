@@ -33,7 +33,7 @@ const Auth = ({ user, setauthbtn, seteditcreatechanelbtn }) => {
                         </>
                     )}
                     <div>
-                        <div className="btn_Auth" onClick={()=>logout()}>
+                        <div className="btn_Auth" >
                             <BiLogOut/>
                             Log Out
                         </div>
