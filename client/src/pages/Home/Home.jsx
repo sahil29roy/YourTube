@@ -1,7 +1,7 @@
 import React from 'react'
 import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 import "./Home.css"
-function Home() {
+const Home = ()=>{
   return (
     <div>
       <div className="container_Pages_App">
