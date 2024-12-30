@@ -4,8 +4,8 @@ import "./Home.css"
 function Home() {
   return (
     <div>
-      <div className="container_pages_App">
-        <Leftsidebar/>
+      <div className="container_Pages_App">
+      <Leftsidebar/>
       </div>
     </div>
   )
