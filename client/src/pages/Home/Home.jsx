@@ -1,7 +1,7 @@
 import React from 'react'
 import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 import "./Home.css"
-const Home = ()=>{
+const Home = () => {
   const navlist = [
     "All",
     "Python",
@@ -14,18 +14,16 @@ const Home = ()=>{
     "Comedy"
   ];
   return (
-    <div>
-      <div className="container_Pages_App">
-      <Leftsidebar/>
-      <div className="container2_pages_App">
+    <div className="container_Pages_App">
+      <Leftsidebar />
+      <div className="container2_Pages_App">
         <div className="navigation_Home">
-          {navlist.map((m)=>{
-            return(
+          {navlist.map((m) => {
+            return (
               <p key={m} className='btn_nav_home'>{m}</p>
             );
           })}
         </div>
-      </div>
       </div>
     </div>
   )
