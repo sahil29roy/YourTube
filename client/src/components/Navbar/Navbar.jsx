@@ -5,6 +5,7 @@ import { RiVideoAddLine } from "react-icons/ri"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { BiUserCircle } from "react-icons/bi"
 import Searchbar from './Searchbar/Searchbar';
+import Auth from '../../pages/Auth/Auth';
 import { Link } from "react-router-dom";
 const Navbar = ({ toggledrawer, seteditcreatechanelbtn }) => {
   const [authbtn, setauthbtn] = useState(false)
@@ -16,6 +17,7 @@ const Navbar = ({ toggledrawer, seteditcreatechanelbtn }) => {
     }
   }
   return (
+    <>
     <div className="Container_Navbar">
       <div className="Burger_Logo_Navbar">
         <div className="burger" onClick={() => toggledrawer()}>
@@ -58,14 +60,19 @@ const Navbar = ({ toggledrawer, seteditcreatechanelbtn }) => {
           </>
         ) : (
           <>
+            <p className="Auth_Btn">
             <BiUserCircle size={22} />
             <b>Sign in</b>
+            </p>
           </>
-        )
-
-        }
+        )}
       </div>
     </div>
+    {
+      authbtn && 
+      <Auth seteditcreatechanelbtn = {seteditcreatechanelbtn} setauthbtn = {setauthbtn} user={currentuser}/>
+    }
+    </>
   )
 }
 
