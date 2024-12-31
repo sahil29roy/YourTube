@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
     <Navbar seteditcreatechanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
-    
+    <Allroutes/>
     </Router>
   );
 }
