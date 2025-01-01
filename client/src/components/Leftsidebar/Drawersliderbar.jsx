@@ -7,10 +7,9 @@ import shorts from "./shorts.png"
 import { NavLink } from 'react-router-dom'
 const Drawersliderbar = ({ toggledraw, toggledrawersidebar }) => {
   return (
-    <div>
-      <div className="container_DrawaerLeftSidebar" style={toggledrawersidebar}>
+    <div className="container_DrawaerLeftSidebar" style={toggledrawersidebar}>
       <div className="container2_DrawaerLeftSidebar">
-      <div className="Drawer_leftsidebar">
+        <div className="Drawer_leftsidebar">
           <NavLink to={'/'} className="icon_sidebar_div">
             <p>
               <AiOutlineHome size={22} className='icon_sidebar' style={{ margin: "auto 0.7rem" }} />
@@ -37,8 +36,44 @@ const Drawersliderbar = ({ toggledraw, toggledrawersidebar }) => {
             </p>
           </div>
         </div>
+        <div className="libraryBtn_Drawerleftsidebar">
+          <NavLink to={'/Library'} className="icon_sidebar_div">
+            <p>
+              <MdOutlineVideoLibrary size={22} className='icon_sidebar' style={{ margin: "auto 0.7rem" }} />
+              <div className="text_sidebar_icon">Library</div>
+            </p>
+          </NavLink>
+          <NavLink to={'/Watchhistory'} className="icon_sidebar_div">
+            <p>
+              <FaHistory size={22} className='icon_sidebar' style={{ margin: "auto 0.7rem" }} />
+              <div className="text_sidebar_icon">History</div>
+            </p>
+          </NavLink>
+          <NavLink to={'/Yourvideo'} className="icon_sidebar_div">
+            <p>
+              <AiFillPlaySquare size={22} className='icon_sidebar' style={{ margin: "auto 0.7rem" }} />
+              <div className="text_sidebar_icon">Your Videos</div>
+            </p>
+          </NavLink>
+          <NavLink to={'/Watchlater'} className="icon_sidebar_div">
+            <p>
+              <MdOutlineWatchLater
+                size={22}
+                className={"icon_sidebar"}
+                style={{ margin: "auto 0.7rem" }}
+              />
+              <div className="text_sidebar_icon">Watch Later</div>
+            </p>
+          </NavLink>
+          <NavLink to={'/Likedvideo'} className="icon_sidebar_div">
+            <p>
+              <AiFillLike size={22} className='icon_sidebar' style={{ margin: "auto 0.7rem" }} />
+              <div className="text_sidebar_icon">Liked Videos</div>
+            </p>
+          </NavLink>
         </div>
-        </div>
+      </div>
+      <div className="container3_DrawaerLeftSidebar" onClick={() => toggledraw()}></div>
     </div>
   )
 }
