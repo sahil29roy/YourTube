@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router } from 'react-router-dom';
 import Allroutes from "../src/AllRoutes"
 
+import Drawersliderbar from '../src/components/Leftsidebar/Drawersliderbar'
+
 function App() {
   const [toggledrawersidebar,settoggledrawersidebar] = useState({
     display : "none"
@@ -25,6 +27,7 @@ function App() {
   return (
     <Router>
     <Navbar seteditcreatechanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
+    <Drawersliderbar toggledraw={toggledrawer} toggledrawersidebar={toggledrawersidebar} />
     <Allroutes/>
     </Router>
   );
