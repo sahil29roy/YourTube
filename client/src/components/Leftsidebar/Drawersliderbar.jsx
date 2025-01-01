@@ -72,6 +72,25 @@ const Drawersliderbar = ({ toggledraw, toggledrawersidebar }) => {
             </p>
           </NavLink>
         </div>
+        <div className="subScriptions_lsdbar">
+          <h3>Your Subscription</h3>
+          <div className="chanel_lsdbar">
+            <p>C</p>
+            <div>Channel_1</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>C</p>
+            <div>Channel_2</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>C</p>
+            <div>Channel_3</div>
+          </div>
+          <div className="chanel_lsdbar">
+            <p>C</p>
+            <div>Channel_4</div>
+          </div>
+        </div>
       </div>
       <div className="container3_DrawaerLeftSidebar" onClick={() => toggledraw()}></div>
     </div>
