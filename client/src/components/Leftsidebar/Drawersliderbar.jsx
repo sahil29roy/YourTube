@@ -8,7 +8,13 @@ import { NavLink } from 'react-router-dom'
 const Drawersliderbar = ({ toggledraw, toggledrawersidebar }) => {
   return (
     <div>
-      
+      <div className="container_DrawaerLeftSidebar" style={toggledrawersidebar}>
+      <div className="container2_DrawaerLeftSidebar">
+        <div className="Drawer_leftsidebar">
+
+        </div>
+        </div>
+        </div>
     </div>
   )
 }
