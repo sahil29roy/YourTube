@@ -1,6 +1,7 @@
 import React from 'react'
 import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 import "./Home.css"
+import vid from "../../components/Video/vid.mp4"
 const Home = () => {
   const navlist = [
     "All",
