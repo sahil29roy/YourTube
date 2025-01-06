@@ -3,6 +3,42 @@ import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 import "./Home.css"
 import vid from "../../components/Video/vid.mp4"
 const Home = () => {
+
+  const vids = [
+    {
+      _id: 1,
+      video_src: vid,
+      chanel: "Channel 1",
+      title: "video 1",
+      uploader: "abc",
+      description: "description of video 1"
+    },
+    {
+      _id: 2,
+      video_src: vid,
+      chanel: "Channel 1",
+      title: "video 2",
+      uploader: "abc",
+      description: "description of video 2"
+    },
+    {
+      _id: 3,
+      video_src: vid,
+      chanel: "Channel 1",
+      title: "video 3",
+      uploader: "abc",
+      description: "description of video 3"
+    },
+    {
+      _id: 4,
+      video_src: vid,
+      chanel: "Channel 2",
+      title: "video 4",
+      uploader: "xyz",
+      description: "description of video 4"
+    },
+  ]
+
   const navlist = [
     "All",
     "Python",
