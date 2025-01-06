@@ -37,7 +37,7 @@ const Home = () => {
       uploader: "xyz",
       description: "description of video 4"
     },
-  ]
+  ];
   const navlist = [
     "All",
     "Python",
