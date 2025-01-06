@@ -51,7 +51,7 @@ const Home = () => {
   ];
   return (
     <div className="container_Pages_App">
-      <Leftsidebar />
+      <Leftsidebar/>
       <div className="container2_Pages_App">
         <div className="navigation_Home">
           {navlist.map((m) => {
