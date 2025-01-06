@@ -1,5 +1,6 @@
 import React from 'react'
 import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
+import Showvideogrid from '../../components/Showvideo/Showvideo'
 import "./Home.css"
 import vid from "../../components/Video/vid.mp4"
 const Home = () => {
@@ -61,6 +62,7 @@ const Home = () => {
             );
           })}
         </div>
+        <Showvideogrid vid={vids}/>
       </div>
     </div>
   )
