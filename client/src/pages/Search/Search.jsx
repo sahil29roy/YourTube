@@ -1,6 +1,6 @@
 import React from 'react'
-import Leftsidebar from '../../Component/Leftsidebar/Leftsidebar'
-import Showvideogrid from '../../Component/Showvideogrid/Showvideogrid'
+import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
+import Showvideogrid from '../../components/Showvideogrid/Showvideogrid'
 import vid from "../../components/Video/vid.mp4"
 
 import { useParams } from 'react-router-dom'
