@@ -4,6 +4,7 @@ import moment from 'moment'
 import Likewatchlatersavebtns from './Likewatchlatersavebtns'
 import { useParams, Link } from 'react-router-dom'
 import vidd from "../../component/Video/vid.mp4"
+import Comment from '../../component/Comment/Comment'
 
 const Videopage = () => {
     const { vid } = useParams();
@@ -86,6 +87,7 @@ const Videopage = () => {
                                 <h2>
                                     <u>Comments</u>
                                 </h2>
+                                <Comment videoid={vv._id}/>
                             </div>
                         </div>
                     </div>
