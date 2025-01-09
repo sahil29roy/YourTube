@@ -8,6 +8,7 @@ const AllRoutes = () => {
       <Routes>
         <Route path='/'element={<Home/>}/>
         <Route path='/search/:Searchquery' element={<Search/>}/>
+        <Route path='/videopage/:vid' element={<Videopage/>}/>
       </Routes>
     </div>
   )
