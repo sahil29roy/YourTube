@@ -6,7 +6,7 @@ const Showvideo = ({ vid }) => {
   // console.log(vid)
   return (
     <>
-      <Link to={`/`}>
+      <Link to={`/videopage/${vid._id}`}>
         <video src={vid} className='video_ShowVideo' />
       </Link>
       <div className="video_description">

@@ -50,7 +50,8 @@ const Videopage = () => {
         },
     ]
     // console.log( vids)
-    const vv = vids?.data.filter((q) => q._id === vid)[0]
+    const vidNumber = parseInt(vid,10);
+    const vv = vids?.data.filter((q) => q._id === vidNumber)[0]
    
     const currentuser = {
         result: {
