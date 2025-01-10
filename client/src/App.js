@@ -32,7 +32,8 @@ function App() {
       )}
     <Navbar seteditcreatechanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
     <Drawersliderbar toggledraw={toggledrawer} toggledrawersidebar={toggledrawersidebar} />
-    <Allroutes/>
+
+    <Allroutes seteditcreatechanelbtn={seteditcreatechanelbtn} setvideouploadpage={setvideouploadpage} />
     </Router>
   );
 }
