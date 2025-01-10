@@ -12,6 +12,8 @@ const Navbar = ({ toggledrawer, seteditcreatechanelbtn }) => {
   // const currentuser = null;
   const currentuser = {
     result: {
+      _id:1,
+      name:"sahil",
       email: "Sahil@gmail.com",
       joinedon: "14-02-2022",
     }
