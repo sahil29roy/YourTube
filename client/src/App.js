@@ -23,17 +23,19 @@ function App() {
       })
     }
   }
-  const [editcreatechanelbtn,seteditcreatechanelbtn] = useState(false);
-  const [videouploadpage,setvideouploadchannelbtn] = useState(false);
+  const [editcreatechanelbtn, seteditcreatechanelbtn] = useState(false);
+  const [videouploadpage, setvideouploadpage] = useState(false);
   return (
     <Router>
+      {
+        videouploadpage && <Videoupload setvideouploadpage={setvideouploadpage} />
+      }
       {editcreatechanelbtn && (
         <Createeditchannel seteditcreatechanelbtn={seteditcreatechanelbtn} />
       )}
-    <Navbar seteditcreatechanelbtn ={seteditcreatechanelbtn} toggledrawer={toggledrawer}/>
-    <Drawersliderbar toggledraw={toggledrawer} toggledrawersidebar={toggledrawersidebar} />
-
-    <Allroutes seteditcreatechanelbtn={seteditcreatechanelbtn} setvideouploadpage={setvideouploadpage} />
+      <Navbar seteditcreatechanelbtn={seteditcreatechanelbtn} toggledrawer={toggledrawer} />
+      <Drawersliderbar toggledraw={toggledrawer} toggledrawersidebar={toggledrawersidebar} />
+      <Allroutes seteditcreatechanelbtn={seteditcreatechanelbtn} setvideouploadpage={setvideouploadpage} />
     </Router>
   );
 }
