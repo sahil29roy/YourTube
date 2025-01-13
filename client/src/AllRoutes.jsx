@@ -2,6 +2,7 @@ import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Search from './pages/Search/Search'
+import Library from './pages/Library/Library'
 import Channel from './pages/Channel/Channel'
 const AllRoutes = () => {
   return (
