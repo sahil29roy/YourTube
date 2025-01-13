@@ -10,7 +10,7 @@ const AllRoutes = () => {
         <Route path='/'element={<Home/>}/>
         <Route path='/search/:Searchquery' element={<Search/>}/>
         <Route path='/videopage/:vid' element={<Videopage/>}/>
-        
+        <Route path='/Library' element={<Library/>}/>
         <Route path='/channel/:cid' element={<Channel seteditcreatechanelbtn={seteditcreatechanelbtn} setvideouploadpage={setvideouploadpage}/>}/>
         </Routes>
     </div>
