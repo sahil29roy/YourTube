@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import Search from './pages/Search/Search'
 import Library from './pages/Library/Library'
 import Likedvideo from './Pages/Likedvideo/Likedvideo'
+import Watchlater from './pages/Watchlater/Watchlater'
 import Watchhistory from './pages/Watchhistory/Watchhistory'
 import Channel from './pages/Channel/Channel'
 const AllRoutes = () => {
@@ -16,6 +17,7 @@ const AllRoutes = () => {
         <Route path='/Library' element={<Library/>}/>
         <Route path='/Likedvideo' element={<Likedvideo/>}/>
         <Route path='/Watchhistory' element={<Watchhistory/>}/>
+        <Route path='/Watchlater' element={<Watchlater/>}/>
         <Route path='/channel/:cid' element={<Channel seteditcreatechanelbtn={seteditcreatechanelbtn} setvideouploadpage={setvideouploadpage}/>}/>
         </Routes>
     </div>
