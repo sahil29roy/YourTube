@@ -13,13 +13,6 @@ const WHL = ({page,videolist}) => {
         }
       }
 
-    // const handleclearhistory=()=>{
-    //     if(currentuser){
-    //         dispatch(clearhistory({
-    //             userid:currentuser?.result._id
-    //         }))
-    //     }
-    // }
   return (
     <div className="container_Pages_App">
         <Leftsidebar/>
