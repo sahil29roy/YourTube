@@ -7,6 +7,7 @@ import Likedvideo from './Pages/Likedvideo/Likedvideo'
 import Watchlater from './pages/Watchlater/Watchlater'
 import Watchhistory from './pages/Watchhistory/Watchhistory'
 import Channel from './pages/Channel/Channel'
+import Yourvideo from './pages/Yourvideo/Yourvideo'
 const AllRoutes = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const AllRoutes = () => {
         <Route path='/Likedvideo' element={<Likedvideo/>}/>
         <Route path='/Watchhistory' element={<Watchhistory/>}/>
         <Route path='/Watchlater' element={<Watchlater/>}/>
+        <Route path='/Yourvideo' element={<Yourvideo/>}/>
         <Route path='/channel/:cid' element={<Channel seteditcreatechanelbtn={seteditcreatechanelbtn} setvideouploadpage={setvideouploadpage}/>}/>
         </Routes>
     </div>
