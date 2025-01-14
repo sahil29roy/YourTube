@@ -20,9 +20,7 @@ const Displaycommment = ({cid,commentbody,userid,commenton,usercommented}) => {
         }
         setedit(false)
     }
-    // const handledel=(id)=>{
-    //     dispatch(deletecomment(id))
-    // }
+    
 
   return (
     <>
@@ -40,8 +38,6 @@ const Displaycommment = ({cid,commentbody,userid,commenton,usercommented}) => {
     {currentuser?.result?._id=== userid && (
         <p className="EditDel_DisplayCommendt">
             <i>Delete</i>
-            {/* <i onClick={()=>handleedit(cid,commentbody)}>Edit</i>
-            <i onClick={()=>handledel(cid)}>Delete</i> */}
         </p>
     )}
     </>
