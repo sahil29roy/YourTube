@@ -3,8 +3,8 @@ import "./Videopage.css"
 import moment from 'moment'
 import Likewatchlatersavebtns from './Likewatchlatersavebtns'
 import { useParams, Link } from 'react-router-dom'
-import vidd from "../../component/Video/vid.mp4"
-import Comment from '../../component/Comment/Comment'
+import vidd from "../../components/Video/vid.mp4"
+import Comment from '../../components/Comment/Comment'
 
 const Videopage = () => {
     const { vid } = useParams();

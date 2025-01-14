@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Yourvideo.css"
-import vid from "../../Component/Video/vid.mp4"
-import Showvideogrid from '../../Component/Showvideogrid/Showvideogrid'
-import Leftsidebar from '../../Component/Leftsidebar/Leftsidebar'
+import vid from "../../components/Video/vid.mp4"
+import Showvideogrid from '../../components/Showvideogrid/Showvideogrid'
+import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 const Yourvideo = () => {
     const yourvideolist=[
         {

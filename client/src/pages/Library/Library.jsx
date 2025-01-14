@@ -1,10 +1,10 @@
 import React from 'react'
-import Leftsidebar from '../../component/Leftsidebar/Leftsidebar'
+import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 import {FaHistory} from "react-icons/fa"
 import {MdOutlineWatchLater} from "react-icons/md"
 import {AiOutlineLike} from "react-icons/ai"
-import vid from "../../component/Video/vid.mp4"
-import WHLvideolist from '../../component/WHL/WHLvideolist'
+import vid from "../../components/Video/vid.mp4"
+import WHLvideolist from '../../components/WHL/WHLvideolist'
 import './Library.css'
 const Library = () => {
     const vids=[

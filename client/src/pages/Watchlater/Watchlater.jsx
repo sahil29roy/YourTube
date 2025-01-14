@@ -1,6 +1,6 @@
 import React from 'react'
-import vid from "../../Component/Video/vid.mp4"
-import WHL from '../../Component/WHL/WHL'
+import vid from "../../components/Video/vid.mp4"
+import WHL from '../../components/WHL/WHL'
 const Watchlater = () => {
     const watchlatervideolist=[
         {
