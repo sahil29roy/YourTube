@@ -1,6 +1,6 @@
 import React from 'react'
-import vid from "../../component/Video/vid.mp4"
-import WHL from '../../component/WHL/WHL'
+import vid from "../../components/Video/vid.mp4"
+import WHL from '../../components/WHL/WHL'
 const Likedvideo = () => {
     const likedvideolist=[
         {

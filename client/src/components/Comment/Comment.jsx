@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Comment.css"
-import Displaycommment from './Displaycommment'
+import Displaycommment from './Displaycomment'
 const Comment = ({ videoid }) => {
     const [commenttext, setcommentext] = useState("")
     const currentuser = 1;

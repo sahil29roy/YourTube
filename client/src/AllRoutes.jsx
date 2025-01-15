@@ -6,9 +6,10 @@ import Library from './pages/Library/Library'
 import Likedvideo from './pages/Likedvideo/Likedvideo'
 import Watchlater from './pages/Watchlater/Watchlater'
 import Watchhistory from './pages/Watchhistory/Watchhistory'
+import Videopage from './pages/Videopage/Videopage'
 import Channel from './pages/Channel/Channel'
 import Yourvideo from './pages/Yourvideo/Yourvideo'
-const AllRoutes = () => {
+const AllRoutes = ({seteditcreatechanelbtn,setvideouploadpage}) => {
   return (
     <div>
       <Routes>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "./Videopage.css"
 import moment from 'moment'
-import Likewatchlatersavebtns from './Likewatchlatersavebtns'
+import Likewatchlatersavebtns from './Likewatchlatersavebtns.css'
 import { useParams, Link } from 'react-router-dom'
 import vidd from "../../components/Video/vid.mp4"
 import Comment from '../../components/Comment/Comment'
