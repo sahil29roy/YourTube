@@ -7,6 +7,14 @@ import vid from "../../components/Video/vid.mp4"
 import WHLvideolist from '../../components/WHL/WHLvideolist'
 import './Library.css'
 const Library = () => {
+    const currentuser = {
+        result: {
+          _id:1,
+          name:"sahil",
+          email: "Sahil@gmail.com",
+          joinedon: "14-02-2022",
+        }
+      }
     const vids=[
         {
           _id:1,
