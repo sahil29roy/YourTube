@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import "./Videopage.css"
 import moment from 'moment'
-import Likewatchlatersavebtns from './Likewatchlatersavebtns.css'
+import Likewatchlatersavebtns from "./Likewatchlatersavebtns";
+
 import { useParams, Link } from 'react-router-dom'
 import vidd from "../../components/Video/vid.mp4"
 import Comment from '../../components/Comment/Comment'
@@ -52,7 +53,7 @@ const Videopage = () => {
     ]
     // console.log( vids)
     const vidNumber = parseInt(vid,10);
-    const vv = vids?.data.filter((q) => q._id === vidNumber)[0]
+    const vv = vids?.filter((q) => q._id === vidNumber)[0]
    
     const currentuser = {
         result: {
