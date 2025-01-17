@@ -46,6 +46,14 @@ const Yourvideo = () => {
           description:"description of video 4"
         },
       ]
+      const currentuser = {
+        result: {
+          _id:1,
+          name:"sahil",
+          email: "Sahil@gmail.com",
+          joinedon: "14-02-2022",
+        }
+      }
   return (
     <div className="container_Pages_App">
         <Leftsidebar/>
