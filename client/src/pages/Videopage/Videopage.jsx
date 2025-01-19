@@ -55,12 +55,12 @@ const Videopage = () => {
     const vidNumber = parseInt(vid,10);
     const vv = vids?.filter((q) => q._id === vidNumber)[0]
    
-    const currentuser = {
-        result: {
-          email: "Sahil@gmail.com",
-          joinedon: "14-02-2022",
-        }
-      }
+    // const currentuser = {
+    //     result: {
+    //       email: "Sahil@gmail.com",
+    //       joinedon: "14-02-2022",
+    //     }
+    //   }
     return (
         <>
             <div className="container_videoPage">
