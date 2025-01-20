@@ -40,12 +40,13 @@ const Channel = ({seteditcreatechanelbtn,setvideouploadpage}) => {
       description: "description of  video 3",
     },
   ];
+  const filteredVids = vids.filter((video) => video.channel === cid);
   return (
     <div className="container_Pages_App">
       <Leftsidebar/>
       <div className="container2_Pages_App">
         <Describechannel cid={cid} setvideouploadpage={setvideouploadpage} seteditcreatechanelbtn={seteditcreatechanelbtn}/>
-        <Showvideogrid vids={vids}/>
+        <Showvideogrid vids={filteredVids}/>
       </div>
     </div>
   )

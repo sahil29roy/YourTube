@@ -52,21 +52,23 @@ const Videopage = () => {
         },
     ]
     // console.log( vids)
-    const vidNumber = parseInt(vid,10);
+    const vidNumber = parseInt(vid, 10);
     const vv = vids?.filter((q) => q._id === vidNumber)[0]
-   
-    // const currentuser = {
-    //     result: {
-    //       email: "Sahil@gmail.com",
-    //       joinedon: "14-02-2022",
-    //     }
-    //   }
+
+    const currentuser = {
+        result: {
+            email: "Sahil@gmail.com",
+            joinedon: "14-02-2022",
+        }
+    }
     return (
         <>
             <div className="container_videoPage">
                 <div className="container2_videoPage">
                     <div className="video_display_screen_videoPage">
-                        <video src={vid} className="video_ShowVideo_videoPage" controls></video>
+                        <video src={vv?.video_src} className="video_ShowVideo_videoPage" controls></video>
+
+
                         <div className="video_details_videoPage">
                             <div className="video_btns_title_VideoPage_cont">
                                 <p className="video_title_VideoPage">{vv?.title}</p>
@@ -88,7 +90,7 @@ const Videopage = () => {
                                 <h2>
                                     <u>Comments</u>
                                 </h2>
-                                <Comment videoid={vv._id}/>
+                                <Comment videoid={vv._id} />
                             </div>
                         </div>
                     </div>
