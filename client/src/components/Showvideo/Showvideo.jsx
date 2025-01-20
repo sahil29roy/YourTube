@@ -1,19 +1,21 @@
-import React from 'react'
-import './Showvideo.css'
-import { Link } from 'react-router-dom'
-import moment from "moment"
-import vid from "../Video/vid.mp4"
+import React from 'react';
+import './Showvideo.css';
+import { Link } from 'react-router-dom';
+import moment from "moment";
+
 const Showvideo = ({ vid }) => {
-  // console.log(vid)
   return (
     <>
+      {/* Wrap video with Link to navigate to the video page */}
       <Link to={`/videopage/${vid._id}`}>
-        <video src={vid} className='video_ShowVideo' />
+        {/* Add controls to allow play functionality */}
+        <video src={vid.video_src} className='video_ShowVideo' controls />
       </Link>
+      
       <div className="video_description">
         <div className="Chanel_logo_App">
           <div className="fstChar_logo_App">
-            <>{vid?.uploader?.charAt(0).toUpperCase()}</>
+            {vid?.uploader?.charAt(0).toUpperCase()}
           </div>
         </div>
 
@@ -26,7 +28,7 @@ const Showvideo = ({ vid }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Showvideo
+export default Showvideo;
