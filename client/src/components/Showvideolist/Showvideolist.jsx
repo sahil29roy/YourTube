@@ -49,7 +49,7 @@ const Showvideolist = ({videoid}) => {
   return (
     <div className="Container_ShowVideoGrid">
         {
-            vids?.data.filter(q=>q._id===videoid).map(vi=>{
+            vids?.filter(q=>q._id===videoid).map(vi=>{
                 return(
                     <div className="video_box_app" key={vi._id}>
                         <Showvideo vid={vi}/>

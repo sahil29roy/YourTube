@@ -2,6 +2,7 @@ import React from 'react'
 import './Showvideo.css'
 import { Link } from 'react-router-dom'
 import moment from "moment"
+import vid from "../Video/vid.mp4"
 const Showvideo = ({ vid }) => {
   // console.log(vid)
   return (
@@ -17,7 +18,7 @@ const Showvideo = ({ vid }) => {
         </div>
 
         <div className="video_details">
-          <p className="title_vid_ShowVideo">{vid?.videotitle}</p>
+          <p className="title_vid_ShowVideo">{vid?.title}</p>
           <pre className="vid_views_UploadTime">{vid?.uploader}</pre>
           <pre className="vid_views_UploadTime">
             {vid?.views} views <div className="dot"></div>{moment(vid?.createdat).fromNow()}
