@@ -27,8 +27,6 @@ const Describechannel = ({ setvideouploadpage, cid, seteditcreatechanelbtn }) =>
       <div className="chanel_logo_chanel">
         <b>{currentchannel?.name.charAt(0).toUpperCase()}</b>
       </div>
-
-
       <div className="description_chanel">
         <b>{currentchannel?.name}</b>
         <p>{currentchannel?.desc}</p>
