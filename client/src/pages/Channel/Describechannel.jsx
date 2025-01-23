@@ -20,8 +20,6 @@ const Describechannel = ({ setvideouploadpage, cid, seteditcreatechanelbtn }) =>
     }
   }
   const currentchannel = channel.filter((c) => c._id === cid)[0];
-  // const currentchannel=channel.filter((c)=>c._id=== cid)[0]
-  // console.log(currentchannel)
   return (
     <div className="container3_chanel">
       <div className="chanel_logo_chanel">
